@@ -1,0 +1,52 @@
+@import 'utility/variable.scss';
+@import 'component/drawer.scss';
+@import 'component/nav.scss';
+@import 'component/tabs.scss';
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.drawer-title {
+  display: flex;
+  align-items: center;
+  height: $default-height;
+  padding-left: 19px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.layout-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layout-container-body {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  padding-bottom: 19px;
+}
+
+.layout-container-footer {
+  background: #242424;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 19px;
+  border-top: 1px solid #5b5b5b;
+  button {
+    width: 100%;
+    display: block;
+  }
+
+  button:first-child {
+    margin-bottom: 14px;
+  }
+}

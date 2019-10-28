@@ -1,0 +1,31 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #242424;
+  border-bottom: 1px solid #5b5b5b;
+
+  div {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  button {
+    height: 30px;
+    width: 100px;
+    background: rgb(30, 25, 80);
+    color: #ffffff;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+  }
+}

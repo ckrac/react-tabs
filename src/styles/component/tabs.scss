@@ -1,0 +1,33 @@
+.tabs {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: #333333;
+  height: 100%;
+  width: 100%;
+}
+.tab-list {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tab {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #5b5b5b;
+  background: #242424;
+}
+.tab.is-active {
+  border-bottom: none;
+  background: #333333;
+}
+.tab-panel {
+  @extend .layout-container;
+}
