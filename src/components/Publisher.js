@@ -6,12 +6,6 @@ import Drawer from './Drawer';
 const Publisher = ({ isPublisherOpen }) => {
   return (
     <>
-      {/* {isPublisherOpen && (
-        <Drawer isOpen={isPublisherOpen}>
-          <div className='drawer-title'>Title</div>
-          <TabContent />
-        </Drawer>
-      )} */}
       <Drawer isOpen={isPublisherOpen}>
         <div className='drawer-title'>Title</div>
         <TabContent />
