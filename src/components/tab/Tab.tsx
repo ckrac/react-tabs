@@ -1,8 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FC } from 'react';
 import cn from 'classnames';
 
-const Tab = ({ children, isActive, isDisabled, onChange }) => {
+interface Props {
+  isActive?: boolean;
+  isDisabled?: boolean;
+  onChange?: () => void;
+}
+
+const Tab: FC<Props> = ({ children, isActive, isDisabled, onChange }) => {
   const classTab = cn('tab', {
     'is-active': isActive
   });
@@ -11,7 +16,9 @@ const Tab = ({ children, isActive, isDisabled, onChange }) => {
     if (isDisabled) {
       return;
     }
-    onChange();
+    if (onChange) {
+      onChange();
+    }
   };
 
   return (
@@ -19,13 +26,6 @@ const Tab = ({ children, isActive, isDisabled, onChange }) => {
       {children}
     </li>
   );
-};
-
-Tab.propTypes = {
-  isActive: PropTypes.bool,
-  isDisabled: PropTypes.bool,
-  onChange: PropTypes.func,
-  children: PropTypes.any
 };
 
 export default Tab;

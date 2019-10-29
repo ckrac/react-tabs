@@ -1,9 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FC } from 'react';
 import TabContent from './TabContent';
 import Drawer from './Drawer';
 
-const Publisher = ({ isPublisherOpen }) => {
+interface Props {
+  isPublisherOpen: boolean;
+}
+
+const Publisher: FC<Props> = ({ isPublisherOpen }) => {
   return (
     <>
       <Drawer isOpen={isPublisherOpen}>
@@ -12,10 +15,6 @@ const Publisher = ({ isPublisherOpen }) => {
       </Drawer>
     </>
   );
-};
-
-Publisher.propTypes = {
-  isPublisherOpen: PropTypes.bool
 };
 
 export default Publisher;
