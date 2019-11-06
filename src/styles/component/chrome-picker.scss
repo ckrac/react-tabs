@@ -1,0 +1,41 @@
+.chrome-picker {
+  box-sizing: border-box !important;
+  width: 100% !important;
+
+  div:nth-child(2) {
+    box-sizing: border-box !important;
+    padding: 0 !important;
+
+    div div {
+      // width: 40px;
+      // height: 40px;
+    }
+  }
+}
+
+.alpha-picker {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 5px !important;
+  border-radius: 3px !important;
+
+  div:nth-child(3) {
+    padding: 0 3px !important;
+    margin: 0 5px !important;
+    width: 90% !important;
+
+    div {
+      margin-top: -5px !important;
+      box-sizing: border-box !important;
+      // toggle
+      div {
+        box-sizing: border-box !important;
+        height: 27px !important;
+        width: 27px !important;
+        border: 8px solid #333333 !important;
+        box-shadow: #5b5b5b 0px 0px 0px 3px !important;
+        background-color: #c2c2c2 !important;
+      }
+    }
+  }
+}

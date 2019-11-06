@@ -3,6 +3,20 @@
 @import 'component/nav.scss';
 @import 'component/tabs.scss';
 @import 'component/dual-slider.scss';
+@import 'component/chrome-picker.scss';
+
+.sketch-picker {
+}
+
+.py-1 {
+  padding-top: $spacing-1;
+  padding-bottom: $spacing-1;
+}
+
+.px-1 {
+  padding-left: $spacing-1;
+  padding-right: $spacing-1;
+}
 
 .app-container {
   width: 100vw;
